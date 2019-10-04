@@ -2,15 +2,15 @@
 
 ## Setup
 
-### Backend
-1. Run backend:
+### 1. Backend
+Running backend:
 ``` 
 cd backend
 npm start
 
 ``` 
-### Frontend
-1. Run frontend:
+### 2. Frontend
+Running frontend:
 ``` 
 cd frontend
 npm start
@@ -19,7 +19,7 @@ npm start
 
 ## Testing
 
-### backend routes
+### 1. backend routes
 ``` 
 GET http://localhost:3002/users
 GET http://localhost:3002/users/1
