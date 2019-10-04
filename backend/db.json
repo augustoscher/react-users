@@ -1,0 +1,11 @@
+{
+  "users": [{
+    "id": 1,
+    "name": "Linus Torvalds",
+    "email": "linustorvalds@test.com.br"
+  },{
+    "id": 2,
+    "name": "Bill Gates",
+    "email": "billgates@test.com.br"
+  }]
+}
