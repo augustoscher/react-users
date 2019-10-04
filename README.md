@@ -1,15 +1,25 @@
 # react-users
 
 ## Setup
+
+### Backend
 1. Run backend:
 ``` 
 cd backend
 npm start
 
 ``` 
+### Frontend
+1. Run frontend:
+``` 
+cd frontend
+npm start
+
+``` 
 
 ## Testing
-1. Routes
+
+### backend routes
 ``` 
 GET http://localhost:3002/users
 GET http://localhost:3002/users/1
