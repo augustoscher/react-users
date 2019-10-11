@@ -1,10 +1,59 @@
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:root {
+  --bg-dark: #1A2F3A;
+
+  --logo-height: 100px;
+  --header-heigth: 100px;
+  --aside-width: 225px;
+  --footer-height: 40px;
+
+  --shadow:
+    0 2px 23px 0 rgba(0, 0, 0, 0.1),
+    0 2px 49px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* seletor universal */
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Grid layout */
+.app {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: var(--aside-width) 1fr;
+  grid-template-rows:
+    var(--header-heigth)
+    1fr
+    var(--footer-height);
+  grid-template-areas:
+    "logo header"
+    "menu content"
+    "menu footer";
+  height: 100vh;
+  background-color: #F5F5F5;
+}
+
+aside.logo {
+  grid-area: logo;
+}
+
+aside.menu-area {
+  grid-area: menu;
+}
+
+header.header {
+  grid-area: header;
+}
+
+main.content {
+  grid-area: conent;
+}
+
+footer.footer {
+  grid-area: footer;
 }
