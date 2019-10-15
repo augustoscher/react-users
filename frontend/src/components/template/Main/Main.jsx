@@ -2,10 +2,10 @@ import './Main.css';
 import React from 'react';
 import Header from '../Header/Header';
 
-export default props =>
+const Main = ({ icon, title, subtitle }) => (
   <>
-    <Header/>
-    <main className='content'>
-      Conteudo
-    </main>
+    <Header icon={icon} title={title} subtitle={subtitle} />
+    <main className="content">Conteudo</main>
   </>
+);
+export default Main;
